@@ -1,0 +1,1 @@
+{ "command": "Clone repo", "params": { "url": "https://github.com/vadimi/grpc-client-cli" } }

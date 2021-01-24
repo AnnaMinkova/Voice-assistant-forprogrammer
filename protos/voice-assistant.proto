@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package voice.assistant;
+
+import "google/api/annotations.proto";
+
+service VoiceAssistant {
+  rpc Answer (Request) returns (Response) {
+    option (google.api.http) = {
+      post: "/v1/run"
+      body: "*"
+    };
+  }
+}
+
+message Request
+{
+  string command = 1;
+  Nlu nlu = 2;
+}
+
+message Nlu
+{
+  Intents intents = 1;
+}
+
+message Intents
+{
+  Clone clone = 1;
+}
+
+message Clone
+{
+  Slots slots = 1;
+}
+
+message Slots
+{
+  What what = 1;
+  Which which = 2;
+}
+
+message What
+{
+  string type = 1;
+  string value = 2;
+}
+
+message Which
+{
+  string type = 1;
+  string value = 2;
+}
+
+message Response {
+  uint32 code = 1;
+  string message = 2;
+  string output = 3;
+}
+
+
+
+
+
+

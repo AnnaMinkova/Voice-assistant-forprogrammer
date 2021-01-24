@@ -1,0 +1,33 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/annaminkova/go/src/github.com/annaminkova/voice-assistant
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /Users/annaminkova/.hunter
+-- [hunter] [ Hunter-ID: 35fa55b | Toolchain-ID: 715fc93 | Config-ID: e6339d5 ]
+-- [hunter] BOOSTPROCESS_ROOT: /Users/annaminkova/.hunter/_Base/35fa55b/715fc93/e6339d5/Install (ver.: 0.5)
+-- Boost version: 1.72.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   iostreams
+-- Boost version: 1.72.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   iostreams
+-- [hunter] GRPC_ROOT: /Users/annaminkova/.hunter/_Base/35fa55b/715fc93/e6339d5/Install (ver.: 1.31.0-p0)
+CMake Warning (dev) at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (Threads)
+  does not match the name of the calling package (absl).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.17/Modules/FindThreads.cmake:234 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  /Users/annaminkova/.hunter/_Base/35fa55b/715fc93/e6339d5/Install/lib/cmake/absl/abslConfig.cmake:3 (include)
+  /Users/annaminkova/.hunter/_Base/35fa55b/715fc93/e6339d5/Install/lib/cmake/grpc/gRPCConfig.cmake:18 (find_package)
+  CMakeLists.txt:30 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- [hunter] PROTOBUF_ROOT: /Users/annaminkova/.hunter/_Base/35fa55b/715fc93/e6339d5/Install (ver.: 3.12.4-p1)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/annaminkova/go/src/github.com/annaminkova/voice-assistant/cmake-build-debug

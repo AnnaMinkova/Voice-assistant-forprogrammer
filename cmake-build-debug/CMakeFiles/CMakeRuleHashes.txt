@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+233367208976e489b7c357e6223ab17d ../ccpkg/voice-assistant.pb.cc
